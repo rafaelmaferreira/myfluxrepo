@@ -14,6 +14,7 @@ spec:
         namespace: flux-system
       # yamllint disable-line rule:new-line-at-end-of-file
       interval: 1m
+      reconcileStrategy: Revision
   values: 
     indexHtml: |-
       <!doctype html>  
@@ -23,5 +24,6 @@ spec:
           </head>
           <body>
             <h1>Hello My custom Page!</h1>
+            <h2>This is Flux CD master class</h2>
           </body>
         </html>
