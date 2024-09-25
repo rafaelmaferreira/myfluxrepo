@@ -39,12 +39,6 @@ spec:
       create: true
       passwordHash: $2a$10$jqOx/bMkRfKZvZiNFbcuFu/cOKWnqdOpOzLcDkS4DaJvMvPlJAT3a
       username: admin
-    ingress:
-      enabled: true
-      hosts:
-        - host: ""
-          paths:  
-            path: "/"
-            pathType: Prefix
+
 
 
