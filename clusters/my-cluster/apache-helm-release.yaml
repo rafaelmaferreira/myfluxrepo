@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: apache
+  namespace: default
+spec:
+  interval: 5m
+  suspend: true
+  chart:
+    spec:
+      chart: apache
+      version: '>=0.1.0 <1.0.0'
+      sourceRef:
+        kind: HelmRepository
+        name: gitlab
+        namespace: default
+      interval: 1m
