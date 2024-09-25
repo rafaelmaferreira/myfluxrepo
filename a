@@ -1,0 +1,7 @@
+flux bootstrap github \
+  --token-auth \
+  --owner=rafaelmaferreira \
+  --repository=myfluxrepo \
+  --branch=main \
+  --path=clusters/my-cluster \
+  --personal
