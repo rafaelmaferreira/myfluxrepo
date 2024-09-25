@@ -14,3 +14,14 @@ spec:
         namespace: flux-system
       # yamllint disable-line rule:new-line-at-end-of-file
       interval: 1m
+  values: 
+    indexHtml: |-
+      <!doctype html>  
+        <html>
+          <head>
+            <title>My custom Page</title>
+          </head>
+          <body>
+            <h1>Hello My custom Page!</h1>
+          </body>
+        </html>
