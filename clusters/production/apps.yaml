@@ -12,3 +12,15 @@ spec:
   prune: true
   wait: true
   timeout: 5m0s
+  patches:
+    - patch: |
+        - op: add
+          path: /spec/values/ingress/hosts/-
+          value:
+            host: podinfo.production
+            paths:
+              - path: "/"
+                pathType: Prefix
+      target:
+        kind: Helmrelease
+        name: podinfo
