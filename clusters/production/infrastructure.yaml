@@ -19,5 +19,5 @@ spec:
           path: /spec/values/ingress/hosts/0/host
           value: "dashboard.production"
       target:
-        kind: HelmRlease
+        kind: HelmRelease
         name: ww-gitops
