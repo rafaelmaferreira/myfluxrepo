@@ -13,4 +13,11 @@ spec:
   path: ./infrastructure/controllers
   prune: true
   wait: true
-  
+  patches:
+    - patch: |
+        - op: replace
+          path: /spec/values/ingress/hosts/0/host
+          value: "dashboard.production"
+      target:
+        kind: HelmRlease
+        name: ww-gitops
